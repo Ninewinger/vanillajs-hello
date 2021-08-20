@@ -23,81 +23,81 @@
                 </div>
                 <div class="card-body position-relative">
                     <div class="row">
-                        <div style="display: none;">
-                            <h5 id="alert" class="alert alert-danger d-flex justify-content-start" role="alert">
+                        <div id="alert" style="display: none;">
+                            <h5 class="alert alert-danger d-flex justify-content-start" role="alert">
                                 Some fields are missing
                             </h5>
                         </div>
                         <div class="col-md-5">
                             <label class="form-label" for="card">Card #</label>
-                            <input class="form-control" type="number" name="card" id="card"
+                            <input class="form-control" type="number" name="card" id="inp"
                                 placeholder="xxxxxxxxxxxxxx">
                         </div>
                         <div class="col-md-3">
                             <label class="form-label" for="cvc">CVC #</label>
-                            <input class="form-control" type="number" id="cvc" placeholder="0000">
+                            <input class="form-control" type="number" id="inp" placeholder="0000">
                         </div>
                         <div class="col-md-4">
                             <label class="form-label" for="amount">Amount</label>
-                            <input class="form-control" type="number" id="amount" placeholder="Amount">
+                            <input class="form-control" type="number" id="inp" placeholder="Amount">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label" for="name">First Name</label>
-                            <input class="form-control" type="text" id="name">
+                            <input class="form-control" type="text" id="inp">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label" for="lname">Last Name</label>
-                            <input class="form-control" type="text" id="lname">
+                            <input class="form-control" type="text" id="inp">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label" for="city">City</label>
-                            <input class="form-control" type="text" name="" id="city">
+                            <input class="form-control" type="text" name="" id="inp">
                         </div>
                         <div class="col-md-3">
                             <label class="form-label" for="state">State</label>
-                            <select class="form-select" name="" id="state">
+                            <select class="form-select" name="" id="inp">
                                 <option value="">Pick a state</option>
                                 <option value="">Your state</option>
                             </select>
                         </div>
                         <div class="col-md-3">
                             <label class="form-label" for="postal">Postal Code</label>
-                            <input class="form-control" type="number" name="" id="postal">
+                            <input class="form-control" id="inp" type="number" name="">
                         </div>
                         <div class="col-md-6">
                             <label for="tarj">We accept:</label>
                             <div class="bg-secondary p-2 rounded-3 form-check col-md-9 text-white d-flex justify-content-between"
                                 id="tarj">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="pago" id="master">
+                                    <input class="form-check-input" type="radio" name="pago">
                                     <label class="form-check-label" for="master"><i
                                             class="fab fa-cc-mastercard"></i></label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="pago" id="visa">
+                                    <input class="form-check-input" type="radio" name="pago">
                                     <label class="form-check-label" for="visa"><i class="fab fa-cc-visa"></i></label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="pago" id="diner">
+                                    <input class="form-check-input" type="radio" name="pago">
                                     <label class="form-check-label" for="diner"><i
                                             class="fab fa-cc-diners-club"></i></label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="pago" id="amex">
+                                    <input class="form-check-input" type="radio" name="pago">
                                     <label class="form-check-label" for="amex"><i class="fab fa-cc-amex"></i></label>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <label for="texta">Message</label>
-                            <textarea class="form-control" name="" id="texta" cols="20" rows="3"></textarea>
+                            <textarea class="form-control" name="" id="inp" cols="20" rows="3"></textarea>
                             <p>Add any note here.</p>
                         </div>
                     </div>
                 </div>
                 <div class="card-footer text-muted d-flex justify-content-end">
-                    <button type="button" class="btn btn-secondary mx-1">Cancel</button>
-                    <button type="button submit" class="btn btn-primary mx-1">Send</button>
+                    <button id="cancel" type="button" class="btn btn-secondary mx-1">Cancel</button>
+                    <button id="submit" type="button submit" class="btn btn-primary mx-1">Send</button>
                 </div>
             </div>
         </form>
