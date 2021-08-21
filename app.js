@@ -1,20 +1,18 @@
-window.onload = function () { }
-let inputs = document.querySelectorAll("#inp");
-let alert = document.querySelector("#alert");
-let submit = document.querySelector("#submit");
-let form = document.querySelectorAll("form")
+window.onload = function () {
+    let form = document.querySelector("form");
 
-submit.addEventListener("click", function (e) {
-    e.preventDefault();
-});
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let inputs = document.querySelectorAll("input");
+        let alert = document.querySelector("#alert");
+        let cancel = document.querySelector("#cancel");
+        for (input of inputs) {
+            if (input.value === "") {
+                input.className += " alert-danger";
+                alert.style.display = "block";
+            }
+        }
+    });
 
-let inpval = []
-alert.style.display = "block";
-for (let input of inputs) {
-    inpval.push(input.nodeValue);
-    input.onsubmit = function () {
-        input.className += " alert-danger";
-        
-    }
+
 }
-console.log(inpval)
