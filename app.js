@@ -1,7 +1,7 @@
 window.onload = function () {
     let form = document.querySelector("form");
     let cancel = document.querySelector("#cancel");
-    let inputs = document.querySelectorAll("input");
+    let inputs = document.getElementsByName("input");
     let alert = document.querySelector("#alert");
     let texta = document.querySelector("#texta");
     let state = document.querySelector("#state");
@@ -13,7 +13,7 @@ window.onload = function () {
     }
     inp.push(texta)
     inp.push(state)
-
+    
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
