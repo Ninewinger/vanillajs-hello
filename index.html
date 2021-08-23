@@ -17,7 +17,7 @@
 <body>
         <div class=" container my-4">
             <div class="card g-3">
-            <form method="post">
+            <form>
                 <div class="card-header d-flex justify-content-start">
                     <h1>Payment form example</h1>
                 </div>
@@ -30,15 +30,15 @@
                         </div>
                         <div class="col-md-5">
                             <label class="form-label" for="card">Card #</label>
-                            <input class="form-control" type="number" name="input" id="card" placeholder="xxxxxxxxxxxxxx">
+                            <input class="form-control" type="text" name="input" id="card" placeholder="xxxxxxxxxxxxxx">
                         </div>
                         <div class="col-md-3">
                             <label class="form-label" for="cvc">CVC #</label>
-                            <input class="form-control" name="input" type="number" id="cvc" placeholder="0000">
+                            <input class="form-control" name="input" type="text" id="cvc" placeholder="0000">
                         </div>
                         <div class="col-md-4">
                             <label class="form-label" for="amount">Amount</label>
-                            <input class="form-control" name="input" type="number" id="amount" placeholder="Amount">
+                            <input class="form-control" name="input" type="text" id="amount" placeholder="Amount">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label" for="name">First Name</label>
@@ -67,7 +67,7 @@
                         </div>
                         <div class="col-md-3">
                             <label class="form-label" for="postal">Postal Code</label>
-                            <input class="form-control" id="postal" type="number" name="input">
+                            <input class="form-control" id="postal" type="text" name="input">
                         </div>
                         <div class="col-md-6">
                             <label for="tarj">We accept:</label>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="card-footer text-muted d-flex justify-content-end">
-                    <button id="cancel" type="button" class="btn btn-secondary mx-1">Cancel</button>
+                    <button id="cancel" type="reset" class="btn btn-secondary mx-1">Cancel</button>
                     <button id="submit" type="submit" class="btn btn-primary mx-1">Send</button>
                 </div>
             </form>

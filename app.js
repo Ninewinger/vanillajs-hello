@@ -10,15 +10,13 @@ window.onload = function () {
                 e.preventDefault();
                 input.classList.add("alert-danger")
                 alert.style.display = "block";
-            } 
+            }
         }
     });
     cancel.addEventListener("click", function () {
         alert.style.display = "none";
         for (let input of inputs) {
-            input.value = ""
             input.classList.remove("alert-danger")
-
         }
     })
 
