@@ -12,7 +12,10 @@ window.onload = function () {
                 input.classList.add("alert-danger")
                 alert.style.display = "block";
             } else {
-                e.target.submit();
+                form.removeEventListener
+/*                 form.addEventListener("submit", function (e) {
+                    e.target.submit();
+                }); */
             }
         }
     });
